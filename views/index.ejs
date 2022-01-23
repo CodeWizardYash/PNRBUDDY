@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://airiq.in/img/favicon.ico">
+
+<link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <title>AIRIQ-PNR</title>
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="logo"><img src="/assets/airiq-logo.png" alt=""></div>
+
+    <div class="input-container">
+
+        <form class="form" method="post" id="myForm"   action="/convert" enctype="multipart/form-data">
+            <p id="fName">SELECT PNR</p><input class="input" onchange="getName()" id="PNR" type="file"  name="PNR"> <label for="PNR">UPLOAD</label>
+        </div>
+        <p class="eg">E.g - "ATU87B G"</p>
+
+               <button class="download" id="button" onClick="submitted()" type="submit">DOWNLOAD </button>
+        </form>
+</div> 
+<script>
+    function getName(){
+    const x =  document.getElementById("PNR").value;
+    fName = x.split("\\");
+    console.log(fName)
+    document.getElementById("fName").innerHTML = fName[2];
+    const button = document.getElementById('button').true;
+
+}
+
+    //function submitted(){  
+      //  document.getElementById("fName").innerHTML = "SELECT PNR";
+    //}
+</script>
+
+</body> 
+</html>
