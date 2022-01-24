@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+body{
+    background-image: url('../assets/airiq-bg.jpg');    
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 430px;
+    height: 500px;
+    background-color: white;   
+    border-radius: 10px; 
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(26, 21, 21);
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.input-container{
+    margin-top: 70px;
+    
+}
+.form{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eg{
+    margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.download{
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    align-self: center;
+    margin-top: 60px;
+    width: 200px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+p{
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+label{
+    background: #ffa32a;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Rubik', sans-serif;
+    font-size: inherit;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 1rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;  
+}
+
+[type="file"] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+
+label:hover{
+    margin-top: 5px;
+    transition: 0s;
+}
+
+.download:hover{
+    margin-top: 63px;
+}
+ 
+ 
